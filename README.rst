@@ -1,3 +1,6 @@
+A "fat" Django template for development environment on bitnami Django stack
+(VMware Ubuntu 12.04 VM) and production with dotcloud.
+
 Django on DotCloud
 ==================
 
@@ -35,6 +38,7 @@ The things I will need to change when starting a project:
 0) git clone
 1) project and app names
 2) any reference to project/app names in the settings.py file
+2a) also change name of project directory for template_dir in settings.py
 3) change import statement in urls.py file
 4) change 2 hardcoded app names in wsgi.py file
 5) git "share project on github"

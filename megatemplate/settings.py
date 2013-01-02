@@ -9,7 +9,7 @@ import uuid
 on_dotcloud=True
 system_id = uuid.getnode()
 print system_id
-if system_id == 52238221199:
+if system_id == 52236400580: #52238221199 was first machine
     on_dotcloud=False # note that dotcloud's number for me has been 60355917464507 so far
 print "on_dotcloud status: ", on_dotcloud
 
@@ -178,7 +178,7 @@ WSGI_APPLICATION = 'megatemplate.wsgi.application'
 
 
 if not on_dotcloud:
-    TEMPLATE_DIRS = ('/home/bitnami/PycharmProjects/megatemplate/templates',
+    TEMPLATE_DIRS = ('/home/bitnami/PycharmProjects/megatemplate2/templates',
         )
 if on_dotcloud:
     TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, 'templates/'),
