@@ -1,6 +1,6 @@
 {
     "push_branch": null, 
-    "application": "template1", 
+    "application": "megatemplate", 
     "version": "0.9.3", 
-    "push_protocol": "rsync"
+    "push_protocol": "git"
 }
