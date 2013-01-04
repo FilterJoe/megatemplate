@@ -1,0 +1,10 @@
+{% extends "mybase.html" %}
+
+{% block title %}
+    HomePage
+{% endblock title %}
+
+{% block content %}
+    <p>Welcome to the world of Zurb. Current time is: {{ current_time|date:"DATETIME_FORMAT" }}</p>
+    <p>More to come . . .</p>
+{% endblock content %}

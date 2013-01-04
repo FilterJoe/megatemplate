@@ -1,12 +1,13 @@
-<html>
-<head>
-    <title>Django Hello</title>
-</head>
-<body>
-<p>Hello World. This is a test of the emergency broadcast system . . . well no.
-    It's actually a Django/Dotcloud template. This versions runs from vm2, with
-    dango-redis set at 3.1.5.</p>
+{% extends "mybase.html" %}
 
-<p> The current day and time is {{ current_time|date:"DATETIME_FORMAT" }}.</p>
-</body>
-</html>
+{% block title %}
+    Django Hello
+{% endblock title %}
+
+{% block content %}
+    <p>Hello World. This is a test of the emergency broadcast system . . . well no.
+        It's actually a Django/Dotcloud template. This versions runs from vm2, with
+        dango-redis set at 3.1.5.</p>
+
+    <p> The current day and time is {{ current_time|date:"DATETIME_FORMAT" }}.</p>
+{% endblock content %}

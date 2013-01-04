@@ -1,0 +1,9 @@
+@import "settings";
+
+/* Zurb Foundation 3 is main CSS. This style.scss file exists to override Zurb
+   defaults. I only make changes to Zurb in style.scss or in settings.scss.
+*/
+
+body {
+  background-color:$successColor;
+}

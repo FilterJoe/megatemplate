@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link type="text/css" href="{{ STATIC_URL }}stylesheets/app.css"
+          media="screen, projector, print"
+          rel="stylesheet"/>
+    <link type="text/css" href="{{ STATIC_URL }}stylesheets/style.css" rel="stylesheet"/>
+
+    {# VERY IMPORTANT to load my style.css last as anything I want to override from Zurb has to be done last#}
+
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+
+
+<!-- Basic Needs -->
+
+<div class="twelve columns centered">
+    <div class="row">
+        <div class="six columns centered">
+            <nav class="top-bar">
+                <ul>
+                    <li class="name"><h1><a href="#">Cute Site Name</a></h1></li>
+                    <li class="toggle-topbar"><a href="#"></a></li>
+                </ul>
+                <section>
+                    <ul class="left">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/hello/">Hello</a></li>
+                        <li><a href="/hello/">Dolly</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li class="has-dropdown">
+                            <a href="#">Admin</a>
+                            <ul class="dropdown">
+                                <li><a href="/admin/">Home</a></li>
+                                <li><a href="/admin/auth/user/">Users</a></li>
+                            </ul>
+                    </ul>
+
+                    <ul class="right">
+                        <li class="search">
+                            <form>
+                                <input type="search">
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% block sidebar %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+
+<!-- Included JS Files (Uncompressed) -->
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/modernizr.foundation.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.cookie.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.event.move.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.event.swipe.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.accordion.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.alerts.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.buttons.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.clearing.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.forms.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.joyride.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.magellan.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.navigation.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.orbit.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.reveal.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.tabs.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.tooltips.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.foundation.topbar.js"></script>
+
+<script src="{{ STATIC_URL }}javascripts/foundation/jquery.placeholder.js"></script>
+
+
+<!-- Application Javascript, safe to override -->
+<script src="{{ STATIC_URL }}javascripts/foundation/app.js"></script>
+
+{% block javascript %}
+{% endblock %}
+
+
+</body>
+</html>

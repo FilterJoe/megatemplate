@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from app1.views import hello_view
+from app1.views import hello_view,home_view
 
 from django.contrib import admin
 admin.autodiscover()
@@ -14,5 +14,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', view=hello_view, name='hello_page'),
+    url(r'^hello/', view=hello_view, name='hello_page'),
+    url(r'^$', view=home_view, name='home_page'),
 )
