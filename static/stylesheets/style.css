@@ -1,0 +1,7 @@
+/* Zurb Foundation 3 is main CSS. This style.scss file exists to override Zurb
+   defaults. I only make changes to Zurb in style.scss or in settings.scss.
+*/
+/* line 7, ../sass/style.scss */
+body {
+  background-color: #5da423;
+}
