@@ -1,0 +1,64 @@
+{% extends "mybase.html" %}
+
+{% block title %}
+    Zurb Demo
+{% endblock title %}
+
+{% block content %}
+    <div class="row">
+        <section role="main">
+            <div class="row">
+                <div class="eight columns centered">
+                    <h2>Buttons</h2>
+                    <h5 class="subheader">Buttons are a convenient tool when it comes to more traditional actions. To
+                        that end, Foundation <a href="http://foundation.zurb.com/docs/buttons.php">Foundation buttons</a>
+                        include a lot of easy to use button styles that you can customize or
+                        override to fit your needs.</h5>
+
+                    <p>Foundation buttons have a number of parameters and styles &mdash; you can see a few examples
+                        below.
+                    <ul class="tabs-content">
+                        <li class="active" id="btnExTab">
+                            <div class="row">
+                                <div class="three columns">
+                                    <h5>Sizes</h5>
+                                    <!-- Buttons -->
+                                    <!-- Sizes -->
+                                    <a class="tiny button" href="#">Tiny</a>
+                                    <a class="small button" href="#">Small</a>
+                                    <a class="button" href="#">Medium</a>
+                                    <a class="large button" href="#">Large</a>
+                                </div>
+                                <div class="three columns offset-by-one">
+                                    <h5>Type</h5>
+                                    <!-- Types -->
+                                    <a class="button" href="#">Normal</a>
+                                    <a class="secondary button" href="#">Secondary</a>
+                                    <a class="success button" href="#">Success</a>
+                                    <a class="alert button" href="#">Alert</a>
+                                </div>
+                                <div class="three columns">
+                                    <h5>Styles</h5>
+                                    <!-- Styles -->
+                                    <a class="button" href="#">Square</a>
+                                    <a class="radius button" href="#">Radius</a>
+                                    <a class="round button" href="#">Round</a>
+                                </div>
+                            </div>
+                            <br>
+
+                            <p>Button classes can also be applied to <code>button</code> elements, as well as <code>input
+                                type="submit"</code> elements.</p>
+                            <!-- Inputs and Submits -->
+                            <button class="button">Form Button</button>
+                            <input type="submit" class="button" value="Input Submit Button"/>
+                            <a href="#" class="button">Regular Button &raquo;</a>
+                        </li>
+                    </ul>
+                    <!-------------------------------------------------------------------------------->
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock content %}

@@ -5,9 +5,21 @@
 {% endblock title %}
 
 {% block content %}
-    <p>Hello World. This is a test of the emergency broadcast system . . . well no.
-        It's actually a Django/Dotcloud template. This versions runs from vm2, with
-        dango-redis set at 3.1.5.</p>
+    <div class="row">
+        <div class="six columns centered">
+            <p>Hello World. This site is merely a template, with the following pieces:</p>
 
-    <p> The current day and time is {{ current_time|date:"DATETIME_FORMAT" }}.</p>
+            <div class="ten columns centered">
+                <ul>
+                    <li>Language: Python 2.7.3</li>
+                    <li>Front-end framework: Zurb Foundation 3</li>
+                    <li>Back-end framework: Django 1.4.3</li>
+                    <li>DB: PostgreSQL</li>
+                    <li>Key-value store: Redis 3.1.5</li>
+                    <li>Host (Paas - Platform as a Service): dotcloud.com</li>
+                </ul>
+            </div>
+            <p> The current day and time is {{ current_time|date:"DATETIME_FORMAT" }}.</p>
+        </div>
+    </div>
 {% endblock content %}
