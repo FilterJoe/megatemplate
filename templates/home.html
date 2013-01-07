@@ -7,10 +7,15 @@
 {% block content %}
     <div class="row">
         <div class="ten columns centered">
-            <p>This site is a template. Combined with my customized bitnami django VMware VM, it makes it
-                easy to start a new project. Select Hello to see the pieces of the template, and Demo to see
+            <p>This site is a fat template. Combined with my customized bitnami Django VMware VM, it makes it
+                easy to start a new project with access to both Django and Zurb, and is already set up for
+                deployment to dotcloud. </p>
+
+            <p>Select Hello to see a list of the template components,
+                Admin to see the Django admin, or select one of the Demo submenu items to see
                 a demonstration of a very small fraction of the capabilities of Zurb, the Saas/CSS front-end
                 framework.</p>
+
             <p>It is currently {{ current_time|date:"DATETIME_FORMAT" }}</p>
         </div>
     </div>

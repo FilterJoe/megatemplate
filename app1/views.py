@@ -30,8 +30,11 @@ def hello_view(request):
     current_time = datetime.now()
     return render_to_response('helloworld.html', locals(), context_instance=RequestContext(request))
 
-def demo_view(request):
-    return render_to_response('demo.html', locals(), context_instance=RequestContext(request))
+def buttons_view(request):
+    return render_to_response('buttons.html', locals(), context_instance=RequestContext(request))
+
+def tabs_view(request):
+    return render_to_response('tabs.html', locals(), context_instance=RequestContext(request))
 
 def home_view(request):
     current_time = datetime.now()
