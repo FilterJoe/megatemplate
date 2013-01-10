@@ -58,9 +58,11 @@ from your editor or using command line.
 
     Your template should be live!
 
+    IMPORTANT: Change your password on the live dotcloud deployment immediately. Default is:
+    user: admin
+    password: password
 
-
-
+    ALSO: If you're using my customized bitnami stack, change the password for postgres.
 
 Notes to self:
 
