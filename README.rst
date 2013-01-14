@@ -13,11 +13,6 @@ dotcloud
 postgreSQL db: on server: "happydb"
 postgreSQL db: on local bitnami development environment: "djangostack"
 
-Still left to do:
-
-admin.py (with a sample commented out)
-model.py (a sample commented out)
-
 This template is mostly pulled from the DotCloud tutorial, but updated for Django 1.4.3.
 I also changed the name to megatemplate and the app to app1.
 
@@ -46,9 +41,11 @@ from your editor or using command line.
    South to work on a new system even after it's already been run before on a different system.
 9) use git to share your project on github. In Pycharm: VCS/Import into Version Control/Share project on GitHub
    check your github account to make sure the entire project is there.
-10) Open up a command line. Type: compass watch
+10) Open up a command line. CD to the static subdirectory of your top level project directory.
+    Type: compass watch
 11) Open up a new command line window:
     dotcloud setup (to connect to your dotcloud account)
+    CD to your top level project directory
     dotcloud create --git yourprojectname (yourprojectname will be part of url)
     dotcloud push
     NOTE: the --git is there to insure that only changes you committed to git will ever be pushed
@@ -63,6 +60,12 @@ from your editor or using command line.
     password: password
 
     ALSO: If you're using my customized bitnami stack, change the password for postgres.
+
+12) Step 11 included several steps only needed once. When coming back to your project for
+    2nd and later visits, you will still need to open up 2 terminals:
+    a) Terminal 1: CD static. Compass Watch
+    b) Terminal 2: push to git either from PyCharm or this terminal. Then you can go live with:
+       dotcloud push
 
 Notes to self:
 
